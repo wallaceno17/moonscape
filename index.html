@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tree Removal & Trimming in Prospect, KY | Moonscape Tree & Landscaping</title>
+  <meta name="description" content="Professional tree removal, trimming, storm cleanup & stump grinding in Prospect, Louisville, Goshen, Anchorage & Pewee Valley. Fully insured. Free estimates." />
+
+  <!-- Open Graph (social preview) -->
+  <meta property="og:title" content="Tree Removal & Trimming in Prospect, KY | Moonscape" />
+  <meta property="og:description" content="Safe, professional, fully insured tree service. Fast cleanup. Free estimates. Emergency storm response available." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/tree-service/" />
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/assets/tree/og-tree.jpg" />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#101a2e;
+      --ink:#eaf0ff;
+      --muted:#b7c3e6;
+      --line:rgba(255,255,255,.12);
+      --accent:#64ffda;
+      --accent2:#7aa7ff;
+      --danger:#ff6b6b;
+      --shadow: 0 18px 40px rgba(0,0,0,.35);
+      --radius:18px;
+      --max: 1120px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:var(--font);
+      background: radial-gradient(1200px 600px at 20% -20%, rgba(122,167,255,.22), transparent 55%),
+                  radial-gradient(900px 600px at 80% 0%, rgba(100,255,218,.18), transparent 50%),
+                  linear-gradient(180deg, #070b14, var(--bg));
+      color:var(--ink);
+      line-height:1.5;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 92px;}
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px; padding:14px 16px;
+      border:1px solid var(--line); border-radius:var(--radius);
+      background: rgba(16,26,46,.72); backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+      position:sticky; top:12px; z-index:30;
+    }
+    .brand{
+      display:flex; gap:12px; align-items:center; min-width: 0;
+    }
+    .logo{
+      width:42px; height:42px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(100,255,218,.9), rgba(122,167,255,.9));
+      display:grid; place-items:center;
+      color:#041018; font-weight:900;
+    }
+    .brand h1{font-size:14px; margin:0; letter-spacing:.4px}
+    .brand p{margin:0; font-size:12px; color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+
+    .btn{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      color:var(--ink);
+      padding:10px 12px;
+      border-radius:14px;
+      text-decoration:none;
+      display:inline-flex; align-items:center; gap:10px;
+      transition: transform .08s ease, background .2s ease, border-color .2s ease;
+      cursor:pointer;
+      font-weight:700;
+      white-space:nowrap;
+    }
+    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.09); border-color: rgba(255,255,255,.2);}
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(100,255,218,.95), rgba(122,167,255,.95));
+      color:#041018; border-color: transparent;
+    }
+    .btn.primary:hover{filter: brightness(1.02);}
+    .btn.danger{
+      background: rgba(255,107,107,.12);
+      border-color: rgba(255,107,107,.35);
+      color: #ffd7d7;
+    }
+    .btn .pill{
+      font-size:12px; padding:4px 8px; border-radius:999px;
+      border:1px solid rgba(0,0,0,.15);
+      background: rgba(0,0,0,.12);
+      color: rgba(0,0,0,.75);
+    }
+
+    .hero{
+      display:grid; gap:18px; grid-template-columns: 1.1fr .9fr;
+      align-items:stretch; margin-top:22px;
+    }
+    .panel{
+      border:1px solid var(--line);
+      background: rgba(16,26,46,.68);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .hero-left{padding:26px 22px}
+    .kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:7px 10px; border-radius:999px;
+      border:1px solid rgba(100,255,218,.28);
+      background: rgba(100,255,218,.07);
+      color: var(--muted);
+      font-weight:700; font-size:12px;
+    }
+    .hero h2{
+      margin:14px 0 10px;
+      font-size:42px; line-height:1.08;
+      letter-spacing:-.6px;
+    }
+    .hero h2 span{color: var(--accent);}
+    .hero .sub{
+      color: var(--muted);
+      font-size:16px;
+      margin:0 0 16px;
+      max-width: 62ch;
+    }
+    .cta-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px;}
+    .grid{
+      display:grid; grid-template-columns: repeat(2, minmax(0,1fr));
+      gap:12px; margin-top:18px;
+    }
+    .mini{
+      padding:12px 12px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      background: rgba(255,255,255,.05);
+    }
+    .mini b{display:block}
+    .mini small{color:var(--muted)}
+
+    .hero-right{
+      display:grid; grid-template-rows: 1fr auto;
+    }
+    .photo{
+      min-height: 310px;
+      background:
+        linear-gradient(180deg, rgba(7,11,20,.08), rgba(7,11,20,.72)),
+        url("assets/tree/hero-tree.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    .quote{
+      padding:16px 16px;
+      border-top:1px solid var(--line);
+      background: rgba(0,0,0,.18);
+    }
+    .quote p{margin:0; color:var(--muted)}
+    .quote b{color:var(--ink)}
+
+    .section{margin-top:20px; padding:22px;}
+    .section h3{margin:0 0 10px; font-size:22px;}
+    .section p{margin:0; color:var(--muted)}
+    .cols{
+      display:grid; grid-template-columns: 1fr 1fr; gap:14px; margin-top:14px;
+    }
+    .bullets{margin:0; padding-left:18px; color:var(--muted)}
+    .bullets li{margin:8px 0}
+
+    .cards{
+      display:grid; grid-template-columns: repeat(3, minmax(0,1fr));
+      gap:12px; margin-top:14px;
+    }
+    .card{
+      padding:14px; border:1px solid var(--line);
+      border-radius:16px; background: rgba(255,255,255,.05);
+    }
+    .card b{display:block; margin-bottom:6px}
+    .tag{
+      display:inline-flex; align-items:center; gap:8px;
+      font-size:12px; color:var(--muted);
+      border:1px solid var(--line);
+      padding:6px 10px; border-radius:999px;
+      background: rgba(255,255,255,.04);
+      margin-top:10px;
+    }
+
+    .service-area{
+      display:flex; flex-wrap:wrap; gap:8px; margin-top:12px;
+    }
+    .chip{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      padding:7px 10px;
+      border-radius:999px;
+      color: var(--muted);
+      font-weight:700;
+      font-size:13px;
+    }
+
+    .gallery{
+      display:grid; grid-template-columns: repeat(4, minmax(0,1fr));
+      gap:10px; margin-top:14px;
+    }
+    .gallery figure{
+      margin:0; border-radius:16px; overflow:hidden;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+    }
+    .gallery img{width:100%; height:160px; object-fit:cover; display:block;}
+    .gallery figcaption{padding:10px; color:var(--muted); font-size:12px}
+
+    .reviews{
+      display:grid; grid-template-columns: repeat(3, minmax(0,1fr));
+      gap:12px; margin-top:14px;
+    }
+    .review{
+      padding:14px; border:1px solid var(--line);
+      border-radius:16px; background: rgba(255,255,255,.05);
+    }
+    .stars{letter-spacing:2px; color: var(--accent); font-weight:900}
+    .review p{margin:10px 0 0; color:var(--muted)}
+    .review small{display:block; margin-top:10px; color: rgba(255,255,255,.65)}
+
+    .pricing{
+      display:grid; grid-template-columns: 1.1fr .9fr;
+      gap:12px; align-items:stretch; margin-top:14px;
+    }
+    .price-box{
+      padding:16px; border:1px solid var(--line);
+      border-radius:16px; background: rgba(255,255,255,.05);
+    }
+    .price-box ul{margin:10px 0 0; padding-left:18px; color:var(--muted)}
+    .price-box li{margin:8px 0}
+
+    .form{
+      padding:16px; border:1px solid var(--line);
+      border-radius:16px; background: rgba(255,255,255,.05);
+      display:grid; gap:10px;
+    }
+    .form label{font-size:12px; color:var(--muted); font-weight:800}
+    .form input, .form textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.18);
+      background: rgba(0,0,0,.18);
+      color: var(--ink);
+      outline:none;
+    }
+    .form textarea{min-height: 98px; resize: vertical}
+    .form .row{display:grid; grid-template-columns: 1fr 1fr; gap:10px}
+    .form .hint{font-size:12px; color: rgba(255,255,255,.55); margin:0}
+
+    .faq{
+      margin-top:14px; display:grid; gap:10px;
+    }
+    details{
+      border:1px solid var(--line);
+      border-radius:16px;
+      background: rgba(255,255,255,.05);
+      padding:12px 14px;
+    }
+    summary{
+      cursor:pointer; font-weight:900;
+      list-style:none;
+    }
+    summary::-webkit-details-marker{display:none}
+    details p{margin:10px 0 0; color:var(--muted)}
+
+    .footer-cta{
+      margin-top:18px;
+      padding:18px;
+      border:1px solid rgba(100,255,218,.28);
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(100,255,218,.10), rgba(122,167,255,.10));
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px; flex-wrap:wrap;
+    }
+    .footer-cta b{font-size:18px}
+    .footer-cta span{color:var(--muted)}
+
+    /* Mobile call bar */
+    .callbar{
+      position:fixed; left:0; right:0; bottom:0;
+      padding:12px 12px;
+      background: rgba(7,11,20,.9);
+      border-top:1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(10px);
+      display:none;
+      z-index:50;
+    }
+    .callbar .inner{
+      max-width: var(--max);
+      margin:0 auto;
+      display:flex; gap:10px; align-items:center; justify-content:space-between;
+    }
+    .callbar .left{
+      display:flex; flex-direction:column; gap:2px;
+      min-width:0;
+    }
+    .callbar .left b{font-size:14px}
+    .callbar .left small{color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+    .callbar .btn{padding:12px 14px}
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .hero{grid-template-columns: 1fr; }
+      .pricing{grid-template-columns: 1fr}
+      .cards{grid-template-columns: 1fr}
+      .reviews{grid-template-columns: 1fr}
+      .gallery{grid-template-columns: 1fr 1fr}
+      .cols{grid-template-columns: 1fr}
+      .hero h2{font-size:34px}
+    }
+    @media (max-width: 560px){
+      .grid{grid-template-columns: 1fr}
+      .form .row{grid-template-columns: 1fr}
+      .gallery img{height:150px}
+      .callbar{display:block}
+    }
+  </style>
+
+  <!-- LocalBusiness + Service schema (helps SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Moonscape Tree & Landscaping",
+    "url": "https://YOUR_DOMAIN.com/tree-service/",
+    "telephone": "+15025550123",
+    "areaServed": ["Prospect KY","Louisville KY","Goshen KY","Anchorage KY","Pewee Valley KY"],
+    "image": "https://YOUR_DOMAIN.com/assets/tree/og-tree.jpg",
+    "description": "Professional tree removal, trimming, storm cleanup, and stump grinding. Fully insured. Free estimates.",
+    "serviceType": ["Tree Removal","Tree Trimming","Storm Damage Cleanup","Stump Grinding"]
+  }
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- Sticky top bar -->
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo">M</div>
+        <div style="min-width:0">
+          <h1>Moonscape Tree & Landscaping</h1>
+          <p>Tree Removal • Trimming • Storm Cleanup • Stump Grinding</p>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:10px; align-items:center;">
+        <a class="btn danger" href="#emergency">
+          🚨 Emergency
+        </a>
+        <a class="btn primary" href="tel:+15025550123">
+          📞 Call (502) 555-0123
+        </a>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="panel hero-left">
+        <div class="kicker">✅ Fully Insured • Free Estimates • Safe Around Homes</div>
+
+        <h2>Tree Removal & Trimming in <span>Prospect, KY</span></h2>
+        <p class="sub">
+          Dangerous tree? Storm damage? Overgrown limbs near your roof?
+          We provide safe, professional tree work with fast cleanup — protecting your property from start to finish.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="tel:+15025550123">📞 Call Now</a>
+          <a class="btn" href="#estimate">📝 Get a Free Estimate</a>
+          <a class="btn" href="#services">🌳 View Services</a>
+        </div>
+
+        <div class="grid">
+          <div class="mini">
+            <b>Safe Around Homes</b>
+            <small>Rigging & controlled drops near roofs, fences, driveways</small>
+          </div>
+          <div class="mini">
+            <b>Fast Cleanup</b>
+            <small>We leave your yard clean — like we were never there</small>
+          </div>
+          <div class="mini">
+            <b>Storm Response</b>
+            <small>Downed trees & hanging limbs — quick scheduling when it matters</small>
+          </div>
+          <div class="mini">
+            <b>High-Value Work</b>
+            <small>We specialize in tough, higher-risk removals done right</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel hero-right">
+        <div class="photo" role="img" aria-label="Tree service work photo"></div>
+        <div class="quote">
+          <p><b>Pro tip:</b> Add a real jobsite photo here (clean driveway, nice home) — it boosts conversions a lot.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHY / TRUST -->
+    <div class="panel section" id="services">
+      <h3>Why Homeowners Choose Moonscape</h3>
+      <p>We don’t just cut trees. We protect your property.</p>
+
+      <div class="cols">
+        <ul class="bullets">
+          <li><b>Fully insured</b> and professional equipment</li>
+          <li><b>Fast, thorough cleanup</b> — no mess left behind</li>
+          <li><b>Safe near structures</b> (homes, garages, fences, driveways)</li>
+          <li><b>Clear communication</b> with honest recommendations</li>
+        </ul>
+
+        <div class="cards">
+          <div class="card">
+            <b>Tree Removal</b>
+            Large & small removals, close quarters, hazard trees
+            <div class="tag">Best for: dangerous / leaning / dead trees</div>
+          </div>
+          <div class="card">
+            <b>Tree Trimming</b>
+            Limb reduction, clearance, shape & safety pruning
+            <div class="tag">Best for: roof/driveway clearance</div>
+          </div>
+          <div class="card">
+            <b>Storm Cleanup</b>
+            Downed limbs, fallen trees, emergency risk mitigation
+            <div class="tag">Best for: urgent situations</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICE LIST -->
+    <div class="panel section">
+      <h3>Our Tree Services</h3>
+      <p>Common services we provide across Prospect and the Louisville area.</p>
+
+      <div class="cards">
+        <div class="card"><b>Hazardous Tree Removal</b> Leaning, dead, split, or near structures</div>
+        <div class="card"><b>Tree Trimming & Pruning</b> Reduce risk and improve clearance</div>
+        <div class="card"><b>Storm Damage Cleanup</b> Fast response after wind/ice storms</div>
+        <div class="card"><b>Preventative Limb Reduction</b> Avoid future damage & breakouts</div>
+        <div class="card"><b>Stump Grinding</b> Remove tripping hazards and prep for seed</div>
+        <div class="card"><b>Brush / Lot Clearing</b> Clean up edges, lines, and overgrowth</div>
+      </div>
+    </div>
+
+    <!-- EMERGENCY -->
+    <div class="panel section" id="emergency">
+      <h3>🚨 Emergency Tree Removal</h3>
+      <p>If a tree is threatening your home or blocking access, call now. We’ll get you scheduled ASAP.</p>
+
+      <div class="cta-row" style="margin-top:12px;">
+        <a class="btn danger" href="tel:+15025550123">📞 Emergency Call (502) 555-0123</a>
+        <a class="btn" href="#estimate">📝 Request an Estimate</a>
+      </div>
+
+      <div class="service-area" aria-label="Service Areas">
+        <span class="chip">Prospect</span>
+        <span class="chip">Louisville</span>
+        <span class="chip">Goshen</span>
+        <span class="chip">Anchorage</span>
+        <span class="chip">Pewee Valley</span>
+      </div>
+    </div>
+
+    <!-- BEFORE / AFTER GALLERY -->
+    <div class="panel section" id="gallery">
+      <h3>Before & After Results</h3>
+      <p>Replace these with your real photos (huge conversion boost).</p>
+
+      <div class="gallery">
+        <figure>
+          <img src="assets/tree/before-after-1.jpg" alt="Before and after tree removal in Prospect KY">
+          <figcaption>Large removal near home • Prospect, KY</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/tree/before-after-2.jpg" alt="Before and after tree trimming clearance">
+          <figcaption>Roof + driveway clearance trimming</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/tree/before-after-3.jpg" alt="Storm damage cleanup before and after">
+          <figcaption>Storm damage cleanup • fast response</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/tree/before-after-4.jpg" alt="Stump grinding before and after">
+          <figcaption>Stump grinding • seed-ready finish</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- REVIEWS -->
+    <div class="panel section" id="reviews">
+      <h3>⭐ 5-Star Reviews</h3>
+      <p>Swap these placeholders with real Google reviews (best proof you can show).</p>
+
+      <div class="reviews">
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>“Moonscape removed a massive tree near our house safely and cleaned everything perfectly. Highly recommend.”</p>
+          <small>— Prospect homeowner</small>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>“Fast response after storm damage. Professional, insured, and very easy to work with.”</p>
+          <small>— Louisville client</small>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>“Clear communication and great cleanup. Our yard looked better than before they arrived.”</p>
+          <small>— Goshen resident</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRICING GUIDE + ESTIMATE FORM -->
+    <div class="panel section" id="estimate">
+      <h3>Free Estimate + Pricing Guide</h3>
+      <p>This filters out cheap shoppers and attracts serious buyers.</p>
+
+      <div class="pricing">
+        <div class="price-box">
+          <b>Typical Starting Ranges</b>
+          <ul>
+            <li><b>Small tree</b> (under 25 ft): <span style="color:var(--muted)">Starting at $350+</span></li>
+            <li><b>Medium tree</b> (25–50 ft): <span style="color:var(--muted)">Starting at $800+</span></li>
+            <li><b>Large tree</b> (50 ft+): <span style="color:var(--muted)">$1,500–$5,000+</span></li>
+            <li><b>Stump grinding</b>: <span style="color:var(--muted)">Starting at $150+</span></li>
+          </ul>
+          <div class="tag">Final price depends on access, size, risk, and cleanup.</div>
+
+          <div class="footer-cta" style="margin-top:14px;">
+            <div>
+              <b>Want a fast quote?</b><br>
+              <span>Call or send photos — we’ll respond quickly.</span>
+            </div>
+            <a class="btn primary" href="tel:+15025550123">📞 Call Now</a>
+          </div>
+        </div>
+
+        <!-- Form: uses FormSubmit.co (easy) OR replace with your own -->
+        <form class="form" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+          <input type="hidden" name="_subject" value="Tree Service Lead - Moonscape">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://YOUR_DOMAIN.com/thanks/">
+
+          <div class="row">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required>
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" placeholder="(502) 123-4567" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label for="city">City</label>
+              <input id="city" name="city" type="text" placeholder="Prospect / Louisville / Goshen" required>
+            </div>
+            <div>
+              <label for="service">Service Needed</label>
+              <input id="service" name="service" type="text" placeholder="Removal / trimming / storm cleanup / stump grinding" required>
+            </div>
+          </div>
+
+          <div>
+            <label for="details">Details</label>
+            <textarea id="details" name="details" placeholder="Tell us what’s going on (size, near house, storm damage, access, etc.)" required></textarea>
+            <p class="hint">Tip: You can mention “Send photos by text” after they submit if you prefer.</p>
+          </div>
+
+          <button class="btn primary" type="submit">📝 Request Free Estimate</button>
+          <a class="btn" href="tel:+15025550123">📞 Prefer to Call? (502) 555-0123</a>
+        </form>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="panel section" id="faq">
+      <h3>FAQ</h3>
+      <p>These questions remove buyer hesitation and boost conversions.</p>
+
+      <div class="faq">
+        <details>
+          <summary>Are you fully insured?</summary>
+          <p>Yes — we operate professionally and prioritize safe work practices, especially around homes and structures.</p>
+        </details>
+        <details>
+          <summary>Do you offer emergency storm service?</summary>
+          <p>Yes. If a tree is threatening your home, driveway, or access, call us and we’ll schedule ASAP based on risk and availability.</p>
+        </details>
+        <details>
+          <summary>How do I get a fast estimate?</summary>
+          <p>Call us or submit the estimate form. If you can send a few photos of the tree and access area, we can often give a quick ballpark range.</p>
+        </details>
+        <details>
+          <summary>Do you clean up everything?</summary>
+          <p>Yes — cleanup is part of the job. We aim to leave the property neat and professional.</p>
+        </details>
+      </div>
+
+      <div class="footer-cta">
+        <div>
+          <b>Protect your property today.</b><br>
+          <span>Tree risks don’t get better over time — let’s handle it safely.</span>
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn primary" href="tel:+15025550123">📞 Call (502) 555-0123</a>
+          <a class="btn" href="#estimate">📝 Free Estimate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile call bar -->
+  <div class="callbar" role="navigation" aria-label="Call bar">
+    <div class="inner">
+      <div class="left">
+        <b>Tree Service • Free Estimates</b>
+        <small>Prospect • Louisville • Goshen • Anchorage • Pewee Valley</small>
+      </div>
+      <a class="btn primary" href="tel:+15025550123">📞 Call Now</a>
+    </div>
+  </div>
+
+  <script>
+    // Smooth scroll for in-page anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href');
+        if (!id || id === '#') return;
+        const target = document.querySelector(id);
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+</body>
+</html>
